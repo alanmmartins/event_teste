@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-branco: #FFFFFF;
+    --cor-primaria: #B51D44;
+    --cor-secundaria: #821B47;
+    --cor-terciaria: #511948;
+    --cor-quartenaria: #201849;
+    
+    --font1: 'Poppins', ;
+    --font2: 'Titillium Web', sans-serif;
+   
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+
+#sombra{
+    position: fixed;
+    top: 0;
+    right: 110vW;
+    background-color: rgba(0,0,0,0.65);
+
+    width: 130vw;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    backdrop-filter: blur(10px);
+
+}
+
+/*  HEADER */
+
+header {
+   
+    background-color: var(--branco);
+
+}
+
+.header_conteudo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 80px;
+}
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+.menu_barras {
+    display: none;
+    z-index: 1;
+}
+
+.menu_barras>img {
+    width: 50px;
+}
+
+.barras{
+    /* border-top: 5px solid var(--branco); */
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    transition: .5s;
+}
+
+.barras::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    position: absolute;
+    top: 12px;
+    transition: .5s;
+}
+
+.barras::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    position: absolute;
+    top: -12px;
+    transition: .5s;
+}
+
+.ativo .barras{
+    /* background-color: transparent; */
+    transform: rotate(135deg);
+}
+
+.ativo .barras::after{
+    transform: rotate(-270deg);
+    top: 0;
+}
+
+.ativo .barras::before{
+    /* transform: rotate(90deg); */
+    top: 0;
+}
+
+.header_logo {
+    width: 50%;
+    max-width: 220px;
+}
+
+header nav {
+    max-width: 550px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+header nav>div {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+header nav a {
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font2);
+}
+
+.header_botao_logar {
+    color: var(--cor-branco);
+    background-color: var(--cor-primaria);
+    border: 4px solid var(--cor-primaria);
+    padding: 4px 30px;
+    border-radius: 5px;
+    font-family: var(--font1);
+}
+
+
+
+
+/* MAIN */
+.main_conteudo{
+    height:718.65px ;
+
+
+
+}
+
+
+
