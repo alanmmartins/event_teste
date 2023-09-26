@@ -177,21 +177,23 @@ header nav a {
 }
 
 
+
 .container_eventos_titulo {
     display: flex;
-   
+    height:718.65px;
+
 
     justify-content: center;
 
 }
 
 
-.card_eventos{
+.card_eventos {
     color: #000;
-font-family: var(--font1);
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    font-family: var(--font1);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 
 }
