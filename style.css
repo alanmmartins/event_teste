@@ -10,10 +10,10 @@
     --cor-secundaria: #821B47;
     --cor-terciaria: #511948;
     --cor-quartenaria: #201849;
-    
+
     --font1: 'Poppins', ;
     --font2: 'Titillium Web', sans-serif;
-   
+
 }
 
 body {
@@ -21,11 +21,11 @@ body {
 }
 
 
-#sombra{
+#sombra {
     position: fixed;
     top: 0;
     right: 110vW;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0, 0, 0, 0.65);
 
     width: 130vw;
     height: 100vh;
@@ -39,14 +39,14 @@ body {
 /*  HEADER */
 
 header {
-   
+
     background-color: var(--branco);
 
 }
 
 .header_conteudo {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     height: 80px;
 }
@@ -56,6 +56,7 @@ header {
     width: 90%;
     margin: 0 auto;
 }
+
 .menu_barras {
     display: none;
     z-index: 1;
@@ -65,7 +66,7 @@ header {
     width: 50px;
 }
 
-.barras{
+.barras {
     /* border-top: 5px solid var(--branco); */
     width: 40px;
     height: 5px;
@@ -77,7 +78,7 @@ header {
     transition: .5s;
 }
 
-.barras::after{
+.barras::after {
     content: '';
     display: block;
     width: 40px;
@@ -89,7 +90,7 @@ header {
     transition: .5s;
 }
 
-.barras::before{
+.barras::before {
     content: '';
     display: block;
     width: 40px;
@@ -101,17 +102,17 @@ header {
     transition: .5s;
 }
 
-.ativo .barras{
+.ativo .barras {
     /* background-color: transparent; */
     transform: rotate(135deg);
 }
 
-.ativo .barras::after{
+.ativo .barras::after {
     transform: rotate(-270deg);
     top: 0;
 }
 
-.ativo .barras::before{
+.ativo .barras::before {
     /* transform: rotate(90deg); */
     top: 0;
 }
@@ -157,12 +158,40 @@ header nav a {
 
 
 /* MAIN */
-.main_conteudo{
-    height:718.65px ;
+.main_conteudo {
+    height: 718.65px;
+    background-color: var(--cor-primaria);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--cor-branco)
+}
 
-
+.container_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 
+.container_eventos_titulo {
+    display: flex;
+   
 
+    justify-content: center;
+
+}
+
+
+.card_eventos{
+    color: #000;
+font-family: var(--font1);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
