@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-branco: #FFFFFF;
+    --cor-primaria: #B51D44;
+    --cor-secundaria: #821B47;
+    --cor-terciaria: #B4A9A9;
+    --cor-quartenaria: #A6A0A0;
+    --cor-texto: #201849;
+    --cor-preto: #000000;
+    --fonte-primaria: 'Poppins', sans-serif;
+}
+
+
+.container {
+    width: 70%;
+    height: 100%;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.direction_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.direction_row {
+    flex-direction: row;
+    display: flex;
+}
+
+.justify_center {
+    display: flex;
+    justify-content: center;
+}
+
+.align_center {
+    display: flex;
+    align-items: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.space_evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.space_around {
+    justify-content: space-around;
+    display: flex;
+}
+
+.banner_home {
+    background-image: url("../../assets/img/banner_home.png");
+    min-height: 719px;
+}
+
+.conteudo_banner>span {
+    color: var(--cor-branco);
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.conteudo_banner>hr {
+    min-width: 814.243px;
+    height: 2.567px;
+    fill: #3F3D56;
+}
+
+.conteudo_banner {
+    gap: 35px;
+}
+
+
+/* PROXIMOS EVENTOS */
+.subtitulo {
+    color: var(--cor-preto);
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.linha_subtitulo {
+    width: 125px;
+    height: 2px;
+    background: var(--cor-primaria);
+}
+
+
+.eventos {
+    background-color: var(--cor-branco);
+    padding-top: 200px;
+    padding-top: 50px;
+    min-height: 460px;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* VISAO */
+
+.visao {
+    background-image: url("../../assets/img/fundo_banner_visao.png");
+    min-height: 458px;
+    gap: 100px;
+    padding-top: 60px
+}
+
+.texto_visao {
+    color: var(--cor-branco);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 1031px;
+}
+
+/* contato */
+.texto_contato{
+    color: var(--cor-preto);
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

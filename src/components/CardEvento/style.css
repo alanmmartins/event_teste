@@ -1,0 +1,48 @@
+:root {
+    --cor-branco: #FFFFFF;
+    --cor-primaria: #B51D44;
+    --cor-secundaria: #821B47;
+    --cor-terciaria: #B4A9A9;
+    --cor-quartenaria: #A6A0A0;
+    --cor-texto: #201849;
+    --cor-preto: #000000;
+    --fonte-primaria: 'Poppins', sans-serif;
+}
+
+h3 {
+    color: var(--cor-preto);
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.texto_card {
+    color: var(--cor-preto);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 80%;
+}
+
+.texto_conectar {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.card {
+    gap :10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    border: 2px solid var(--cor-secundaria);
+}
